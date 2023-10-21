@@ -1,6 +1,17 @@
-
-.navbaritems{
+.navbaritems {
     color: white;
     font-size: large;
     font-family: cursive;
+}
+
+.example-panel-red.mat-mdc-select-panel {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.example-panel-green.mat-mdc-select-panel {
+    background: rgba(0, 255, 0, 0.5);
+}
+
+.example-panel-blue.mat-mdc-select-panel {
+    background: rgba(0, 0, 255, 0.5);
 }

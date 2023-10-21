@@ -12,6 +12,12 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
+import { MaterialModule } from './shared/material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +28,16 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
     GalleryComponent,
     RegistrationComponent,
     ContactComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+
   ],
   imports: [
     BrowserModule,
     routes,
     ReactiveFormsModule,
-    RouterModule.forRoot([{path: 'registration', component: RegistrationComponent},]),
+    RouterModule.forRoot([{ path: 'registration', component: RegistrationComponent },]),
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
